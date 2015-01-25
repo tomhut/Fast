@@ -11,6 +11,7 @@
 		04A580B3FA6D1F1BA3292762 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581713BECC359EEAFE2DCCAA /* libPods.a */; };
 		B42875F3299AEE1DA1A35EC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581713BECC359EEAFE2DCCAA /* libPods.a */; };
 		B92234EAE41016B5DB4AAC4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581713BECC359EEAFE2DCCAA /* libPods.a */; };
+		E20618351A75386400C5E357 /* TAHArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20618341A75386400C5E357 /* TAHArticleViewController.m */; };
 		E23895B21A70598600DC41AC /* Fast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2656EED1A6C177200854DFC /* Fast.xcdatamodeld */; };
 		E2656EE91A6C177200854DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656EE81A6C177200854DFC /* main.m */; };
 		E2656EEC1A6C177200854DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656EEB1A6C177200854DFC /* AppDelegate.m */; };
@@ -21,7 +22,6 @@
 		E2656EFD1A6C177200854DFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2656EFB1A6C177200854DFC /* LaunchScreen.xib */; };
 		E2656F091A6C177200854DFC /* FastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656F081A6C177200854DFC /* FastTests.m */; };
 		E2656F151A6C198400854DFC /* TAHArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656F141A6C198400854DFC /* TAHArticleTableViewCell.m */; };
-		E2656F181A6C199300854DFC /* TAHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656F171A6C199300854DFC /* TAHWebViewController.m */; };
 		E283ABB81A6DBAB9005C0116 /* NSString_stripHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = E283ABB71A6DBAB9005C0116 /* NSString_stripHtml.m */; };
 		E283ABC31A6DBBB9005C0116 /* NewsItemInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E283ABC21A6DBBB9005C0116 /* NewsItemInterfaceController.m */; };
 		E283ABC61A6DBBB9005C0116 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E283ABC51A6DBBB9005C0116 /* GlanceController.m */; };
@@ -116,6 +116,8 @@
 /* Begin PBXFileReference section */
 		581713BECC359EEAFE2DCCAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8CC55458967442E9A461E9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E20618331A75386400C5E357 /* TAHArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHArticleViewController.h; sourceTree = "<group>"; };
+		E20618341A75386400C5E357 /* TAHArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHArticleViewController.m; sourceTree = "<group>"; };
 		E2656EE31A6C177200854DFC /* Fast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2656EE71A6C177200854DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2656EE81A6C177200854DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,8 +134,6 @@
 		E2656F081A6C177200854DFC /* FastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastTests.m; sourceTree = "<group>"; };
 		E2656F131A6C198400854DFC /* TAHArticleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHArticleTableViewCell.h; sourceTree = "<group>"; };
 		E2656F141A6C198400854DFC /* TAHArticleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHArticleTableViewCell.m; sourceTree = "<group>"; };
-		E2656F161A6C199300854DFC /* TAHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHWebViewController.h; sourceTree = "<group>"; };
-		E2656F171A6C199300854DFC /* TAHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHWebViewController.m; sourceTree = "<group>"; };
 		E2656F1A1A6C1BD100854DFC /* FTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAPIClient.h; sourceTree = "<group>"; };
 		E2656F1B1A6C1BD100854DFC /* FTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAPIClient.m; sourceTree = "<group>"; };
 		E273225F1A6EFF6300E12CE7 /* TAHArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHArticle.h; sourceTree = "<group>"; };
@@ -261,10 +261,10 @@
 				E2656F121A6C197700854DFC /* TableView */,
 				E2656EEA1A6C177200854DFC /* AppDelegate.h */,
 				E2656EEB1A6C177200854DFC /* AppDelegate.m */,
+				E20618331A75386400C5E357 /* TAHArticleViewController.h */,
+				E20618341A75386400C5E357 /* TAHArticleViewController.m */,
 				E2656EF01A6C177200854DFC /* MasterViewController.h */,
 				E2656EF11A6C177200854DFC /* MasterViewController.m */,
-				E2656F161A6C199300854DFC /* TAHWebViewController.h */,
-				E2656F171A6C199300854DFC /* TAHWebViewController.m */,
 				E2656EF61A6C177200854DFC /* Main.storyboard */,
 				E2656EF91A6C177200854DFC /* Images.xcassets */,
 				E2656EFB1A6C177200854DFC /* LaunchScreen.xib */,
@@ -815,7 +815,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E283ABB81A6DBAB9005C0116 /* NSString_stripHtml.m in Sources */,
-				E2656F181A6C199300854DFC /* TAHWebViewController.m in Sources */,
+				E20618351A75386400C5E357 /* TAHArticleViewController.m in Sources */,
 				E2656F151A6C198400854DFC /* TAHArticleTableViewCell.m in Sources */,
 				E2656EF21A6C177200854DFC /* MasterViewController.m in Sources */,
 				E2656EEF1A6C177200854DFC /* Fast.xcdatamodeld in Sources */,

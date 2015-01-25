@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F40A826A-1C74-4139-AECB-E933472B8767</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Fast</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>808CC24D5DA22B5AA5DB6C0045D045F96A1DB500</key>
+		<string>https://github.com/tomhut/Fast.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Fast.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>808CC24D5DA22B5AA5DB6C0045D045F96A1DB500</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tomhut/Fast.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>808CC24D5DA22B5AA5DB6C0045D045F96A1DB500</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>808CC24D5DA22B5AA5DB6C0045D045F96A1DB500</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fast</string>
+		</dict>
+	</array>
+</dict>
+</plist>

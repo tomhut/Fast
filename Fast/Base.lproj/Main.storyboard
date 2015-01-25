@@ -23,7 +23,7 @@
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <viewController title="Detail" id="JEX-9P-axG" customClass="TAHWebViewController" sceneMemberID="viewController">
+                <viewController title="Detail" id="JEX-9P-axG" customClass="TAHArticleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
                         <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
@@ -31,25 +31,10 @@
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-U1-z26">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3b4-U1-z26" firstAttribute="top" secondItem="svH-Pt-448" secondAttribute="top" id="2Lf-OC-MIa"/>
-                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="3b4-U1-z26" secondAttribute="bottom" id="43M-sL-sij"/>
-                            <constraint firstAttribute="trailing" secondItem="3b4-U1-z26" secondAttribute="trailing" id="7Hy-A9-j6D"/>
-                            <constraint firstItem="3b4-U1-z26" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="NC1-Tb-FMZ"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
-                    <connections>
-                        <outlet property="webView" destination="3b4-U1-z26" id="jDq-bW-87T"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +110,7 @@
                                 <connections>
                                     <outlet property="descriptionLabel" destination="aag-TL-dIS" id="hYN-db-dEw"/>
                                     <outlet property="titleLabel" destination="cDU-Y1-cSf" id="cR9-fG-8yl"/>
-                                    <segue destination="vC3-pB-5Vb" kind="showDetail" id="ROI-v2-C0S"/>
+                                    <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="ROI-v2-C0S"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
