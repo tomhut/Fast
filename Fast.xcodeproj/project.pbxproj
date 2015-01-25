@@ -7,15 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0070BA049AC2DD587F9ED0C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581713BECC359EEAFE2DCCAA /* libPods.a */; };
+		04A580B3FA6D1F1BA3292762 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581713BECC359EEAFE2DCCAA /* libPods.a */; };
+		B42875F3299AEE1DA1A35EC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581713BECC359EEAFE2DCCAA /* libPods.a */; };
+		B92234EAE41016B5DB4AAC4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581713BECC359EEAFE2DCCAA /* libPods.a */; };
+		E23895B21A70598600DC41AC /* Fast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2656EED1A6C177200854DFC /* Fast.xcdatamodeld */; };
 		E2656EE91A6C177200854DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656EE81A6C177200854DFC /* main.m */; };
 		E2656EEC1A6C177200854DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656EEB1A6C177200854DFC /* AppDelegate.m */; };
 		E2656EEF1A6C177200854DFC /* Fast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2656EED1A6C177200854DFC /* Fast.xcdatamodeld */; };
 		E2656EF21A6C177200854DFC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656EF11A6C177200854DFC /* MasterViewController.m */; };
-		E2656EF51A6C177200854DFC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656EF41A6C177200854DFC /* DetailViewController.m */; };
 		E2656EF81A6C177200854DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2656EF61A6C177200854DFC /* Main.storyboard */; };
 		E2656EFA1A6C177200854DFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2656EF91A6C177200854DFC /* Images.xcassets */; };
 		E2656EFD1A6C177200854DFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2656EFB1A6C177200854DFC /* LaunchScreen.xib */; };
 		E2656F091A6C177200854DFC /* FastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656F081A6C177200854DFC /* FastTests.m */; };
+		E2656F151A6C198400854DFC /* TAHArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656F141A6C198400854DFC /* TAHArticleTableViewCell.m */; };
+		E2656F181A6C199300854DFC /* TAHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656F171A6C199300854DFC /* TAHWebViewController.m */; };
+		E283ABB81A6DBAB9005C0116 /* NSString_stripHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = E283ABB71A6DBAB9005C0116 /* NSString_stripHtml.m */; };
+		E283ABC31A6DBBB9005C0116 /* NewsItemInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E283ABC21A6DBBB9005C0116 /* NewsItemInterfaceController.m */; };
+		E283ABC61A6DBBB9005C0116 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E283ABC51A6DBBB9005C0116 /* GlanceController.m */; };
+		E283ABC81A6DBBB9005C0116 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E283ABC71A6DBBB9005C0116 /* Images.xcassets */; };
+		E283ABCC1A6DBBB9005C0116 /* Fast WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = E283ABCB1A6DBBB9005C0116 /* Fast WatchKit App.app */; };
+		E283ABD41A6DBBB9005C0116 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E283ABD21A6DBBB9005C0116 /* Interface.storyboard */; };
+		E283ABD61A6DBBB9005C0116 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E283ABD51A6DBBB9005C0116 /* Images.xcassets */; };
+		E283ABD91A6DBBB9005C0116 /* Fast WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E283ABBD1A6DBBB9005C0116 /* Fast WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E29616061A7048F7007A402C /* FastKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E29616051A7048F7007A402C /* FastKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E296160C1A7048F7007A402C /* FastKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29616011A7048F7007A402C /* FastKit.framework */; };
+		E29616151A7048F7007A402C /* FastKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E29616141A7048F7007A402C /* FastKitTests.m */; };
+		E29616181A7048F7007A402C /* FastKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29616011A7048F7007A402C /* FastKit.framework */; };
+		E29616191A7048F7007A402C /* FastKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E29616011A7048F7007A402C /* FastKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E29616231A704953007A402C /* TAHDataAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = E29616211A704953007A402C /* TAHDataAccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E29616241A704953007A402C /* TAHDataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E29616221A704953007A402C /* TAHDataAccess.m */; };
+		E29616261A704DF8007A402C /* TAHArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E27322601A6EFF6300E12CE7 /* TAHArticle.m */; };
+		E29616271A704E00007A402C /* TAHArticle.h in Headers */ = {isa = PBXBuildFile; fileRef = E273225F1A6EFF6300E12CE7 /* TAHArticle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E29616291A705107007A402C /* FTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656F1B1A6C1BD100854DFC /* FTAPIClient.m */; };
+		E296162A1A70511F007A402C /* FTAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E2656F1A1A6C1BD100854DFC /* FTAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +51,71 @@
 			remoteGlobalIDString = E2656EE21A6C177200854DFC;
 			remoteInfo = Fast;
 		};
+		E283ABCD1A6DBBB9005C0116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2656EDB1A6C177200854DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E283ABCA1A6DBBB9005C0116;
+			remoteInfo = "Fast WatchKit App";
+		};
+		E283ABD71A6DBBB9005C0116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2656EDB1A6C177200854DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E283ABBC1A6DBBB9005C0116;
+			remoteInfo = "Fast WatchKit Extension";
+		};
+		E296160D1A7048F7007A402C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2656EDB1A6C177200854DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E29616001A7048F7007A402C;
+			remoteInfo = FastKit;
+		};
+		E296160F1A7048F7007A402C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2656EDB1A6C177200854DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2656EE21A6C177200854DFC;
+			remoteInfo = Fast;
+		};
+		E29616161A7048F7007A402C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2656EDB1A6C177200854DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E29616001A7048F7007A402C;
+			remoteInfo = FastKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E283ABE01A6DBBB9005C0116 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E283ABD91A6DBBB9005C0116 /* Fast WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E296161D1A7048F7007A402C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E29616191A7048F7007A402C /* FastKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		581713BECC359EEAFE2DCCAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8CC55458967442E9A461E9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E2656EE31A6C177200854DFC /* Fast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2656EE71A6C177200854DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2656EE81A6C177200854DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,21 +124,61 @@
 		E2656EEE1A6C177200854DFC /* Fast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fast.xcdatamodel; sourceTree = "<group>"; };
 		E2656EF01A6C177200854DFC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		E2656EF11A6C177200854DFC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		E2656EF31A6C177200854DFC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		E2656EF41A6C177200854DFC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E2656EF71A6C177200854DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2656EF91A6C177200854DFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E2656EFC1A6C177200854DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E2656F021A6C177200854DFC /* FastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2656F071A6C177200854DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2656F081A6C177200854DFC /* FastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastTests.m; sourceTree = "<group>"; };
+		E2656F131A6C198400854DFC /* TAHArticleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHArticleTableViewCell.h; sourceTree = "<group>"; };
+		E2656F141A6C198400854DFC /* TAHArticleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHArticleTableViewCell.m; sourceTree = "<group>"; };
+		E2656F161A6C199300854DFC /* TAHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHWebViewController.h; sourceTree = "<group>"; };
+		E2656F171A6C199300854DFC /* TAHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHWebViewController.m; sourceTree = "<group>"; };
+		E2656F1A1A6C1BD100854DFC /* FTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAPIClient.h; sourceTree = "<group>"; };
+		E2656F1B1A6C1BD100854DFC /* FTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAPIClient.m; sourceTree = "<group>"; };
+		E273225F1A6EFF6300E12CE7 /* TAHArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHArticle.h; sourceTree = "<group>"; };
+		E27322601A6EFF6300E12CE7 /* TAHArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHArticle.m; sourceTree = "<group>"; };
+		E283ABB61A6DBAB9005C0116 /* NSString_stripHtml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_stripHtml.h; sourceTree = "<group>"; };
+		E283ABB71A6DBAB9005C0116 /* NSString_stripHtml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_stripHtml.m; sourceTree = "<group>"; };
+		E283ABBD1A6DBBB9005C0116 /* Fast WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fast WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E283ABC01A6DBBB9005C0116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E283ABC11A6DBBB9005C0116 /* NewsItemInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsItemInterfaceController.h; sourceTree = "<group>"; };
+		E283ABC21A6DBBB9005C0116 /* NewsItemInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsItemInterfaceController.m; sourceTree = "<group>"; };
+		E283ABC41A6DBBB9005C0116 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		E283ABC51A6DBBB9005C0116 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		E283ABC71A6DBBB9005C0116 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E283ABCB1A6DBBB9005C0116 /* Fast WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E283ABD11A6DBBB9005C0116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E283ABD31A6DBBB9005C0116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E283ABD51A6DBBB9005C0116 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E29616011A7048F7007A402C /* FastKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29616041A7048F7007A402C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29616051A7048F7007A402C /* FastKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastKit.h; sourceTree = "<group>"; };
+		E296160B1A7048F7007A402C /* FastKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29616131A7048F7007A402C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29616141A7048F7007A402C /* FastKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastKitTests.m; sourceTree = "<group>"; };
+		E29616211A704953007A402C /* TAHDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHDataAccess.h; sourceTree = "<group>"; };
+		E29616221A704953007A402C /* TAHDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHDataAccess.m; sourceTree = "<group>"; };
+		E296162B1A70519C007A402C /* Fast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Fast.entitlements; sourceTree = "<group>"; };
+		E296162C1A7051EC007A402C /* Fast WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Fast WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		ED7B0811ADED6D5211A681BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1866A414C26FA40FB77B2BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42875F3299AEE1DA1A35EC6 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2656EE01A6C177200854DFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0070BA049AC2DD587F9ED0C2 /* libPods.a in Frameworks */,
+				E29616181A7048F7007A402C /* FastKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,15 +189,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E283ABBA1A6DBBB9005C0116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B92234EAE41016B5DB4AAC4E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29615FD1A7048F7007A402C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A580B3FA6D1F1BA3292762 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29616081A7048F7007A402C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E296160C1A7048F7007A402C /* FastKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A003FA51A2ECC175D18704 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A8CC55458967442E9A461E9 /* Pods.debug.xcconfig */,
+				ED7B0811ADED6D5211A681BA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2656EDA1A6C177200854DFC = {
 			isa = PBXGroup;
 			children = (
 				E2656EE51A6C177200854DFC /* Fast */,
 				E2656F051A6C177200854DFC /* FastTests */,
+				E283ABBE1A6DBBB9005C0116 /* Fast WatchKit Extension */,
+				E283ABCF1A6DBBB9005C0116 /* Fast WatchKit App */,
+				E29616021A7048F7007A402C /* FastKit */,
+				E29616111A7048F7007A402C /* FastKitTests */,
 				E2656EE41A6C177200854DFC /* Products */,
+				09A003FA51A2ECC175D18704 /* Pods */,
+				FA77126EB957F081D0F4958B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +245,10 @@
 			children = (
 				E2656EE31A6C177200854DFC /* Fast.app */,
 				E2656F021A6C177200854DFC /* FastTests.xctest */,
+				E283ABBD1A6DBBB9005C0116 /* Fast WatchKit Extension.appex */,
+				E283ABCB1A6DBBB9005C0116 /* Fast WatchKit App.app */,
+				E29616011A7048F7007A402C /* FastKit.framework */,
+				E296160B1A7048F7007A402C /* FastKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,12 +256,15 @@
 		E2656EE51A6C177200854DFC /* Fast */ = {
 			isa = PBXGroup;
 			children = (
+				E296162B1A70519C007A402C /* Fast.entitlements */,
+				E283ABB51A6DBAB1005C0116 /* Vendor */,
+				E2656F121A6C197700854DFC /* TableView */,
 				E2656EEA1A6C177200854DFC /* AppDelegate.h */,
 				E2656EEB1A6C177200854DFC /* AppDelegate.m */,
 				E2656EF01A6C177200854DFC /* MasterViewController.h */,
 				E2656EF11A6C177200854DFC /* MasterViewController.m */,
-				E2656EF31A6C177200854DFC /* DetailViewController.h */,
-				E2656EF41A6C177200854DFC /* DetailViewController.m */,
+				E2656F161A6C199300854DFC /* TAHWebViewController.h */,
+				E2656F171A6C199300854DFC /* TAHWebViewController.m */,
 				E2656EF61A6C177200854DFC /* Main.storyboard */,
 				E2656EF91A6C177200854DFC /* Images.xcassets */,
 				E2656EFB1A6C177200854DFC /* LaunchScreen.xib */,
@@ -127,20 +300,172 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E2656F121A6C197700854DFC /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E2656F131A6C198400854DFC /* TAHArticleTableViewCell.h */,
+				E2656F141A6C198400854DFC /* TAHArticleTableViewCell.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		E2656F191A6C1BAE00854DFC /* API Client */ = {
+			isa = PBXGroup;
+			children = (
+				E2656F1A1A6C1BD100854DFC /* FTAPIClient.h */,
+				E2656F1B1A6C1BD100854DFC /* FTAPIClient.m */,
+			);
+			name = "API Client";
+			path = ../Fast;
+			sourceTree = "<group>";
+		};
+		E273225E1A6EFF5300E12CE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E273225F1A6EFF6300E12CE7 /* TAHArticle.h */,
+				E27322601A6EFF6300E12CE7 /* TAHArticle.m */,
+			);
+			name = Model;
+			path = ../Fast;
+			sourceTree = "<group>";
+		};
+		E283ABB51A6DBAB1005C0116 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E283ABB61A6DBAB9005C0116 /* NSString_stripHtml.h */,
+				E283ABB71A6DBAB9005C0116 /* NSString_stripHtml.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		E283ABBE1A6DBBB9005C0116 /* Fast WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E296162C1A7051EC007A402C /* Fast WatchKit Extension.entitlements */,
+				E283ABC11A6DBBB9005C0116 /* NewsItemInterfaceController.h */,
+				E283ABC21A6DBBB9005C0116 /* NewsItemInterfaceController.m */,
+				E283ABC41A6DBBB9005C0116 /* GlanceController.h */,
+				E283ABC51A6DBBB9005C0116 /* GlanceController.m */,
+				E283ABC71A6DBBB9005C0116 /* Images.xcassets */,
+				E283ABBF1A6DBBB9005C0116 /* Supporting Files */,
+			);
+			path = "Fast WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E283ABBF1A6DBBB9005C0116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E283ABC01A6DBBB9005C0116 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E283ABCF1A6DBBB9005C0116 /* Fast WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E283ABD21A6DBBB9005C0116 /* Interface.storyboard */,
+				E283ABD51A6DBBB9005C0116 /* Images.xcassets */,
+				E283ABD01A6DBBB9005C0116 /* Supporting Files */,
+			);
+			path = "Fast WatchKit App";
+			sourceTree = "<group>";
+		};
+		E283ABD01A6DBBB9005C0116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E283ABD11A6DBBB9005C0116 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E29616021A7048F7007A402C /* FastKit */ = {
+			isa = PBXGroup;
+			children = (
+				E2656F191A6C1BAE00854DFC /* API Client */,
+				E29616251A704B6C007A402C /* CoreData */,
+				E273225E1A6EFF5300E12CE7 /* Model */,
+				E29616051A7048F7007A402C /* FastKit.h */,
+				E29616031A7048F7007A402C /* Supporting Files */,
+			);
+			path = FastKit;
+			sourceTree = "<group>";
+		};
+		E29616031A7048F7007A402C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E29616041A7048F7007A402C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E29616111A7048F7007A402C /* FastKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E29616141A7048F7007A402C /* FastKitTests.m */,
+				E29616121A7048F7007A402C /* Supporting Files */,
+			);
+			path = FastKitTests;
+			sourceTree = "<group>";
+		};
+		E29616121A7048F7007A402C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E29616131A7048F7007A402C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E29616251A704B6C007A402C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E29616211A704953007A402C /* TAHDataAccess.h */,
+				E29616221A704953007A402C /* TAHDataAccess.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		FA77126EB957F081D0F4958B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				581713BECC359EEAFE2DCCAA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E29615FE1A7048F7007A402C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29616231A704953007A402C /* TAHDataAccess.h in Headers */,
+				E29616061A7048F7007A402C /* FastKit.h in Headers */,
+				E29616271A704E00007A402C /* TAHArticle.h in Headers */,
+				E296162A1A70511F007A402C /* FTAPIClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E2656EE21A6C177200854DFC /* Fast */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2656F0C1A6C177200854DFC /* Build configuration list for PBXNativeTarget "Fast" */;
 			buildPhases = (
+				9370E0E33D23DA296DC777F1 /* Check Pods Manifest.lock */,
 				E2656EDF1A6C177200854DFC /* Sources */,
 				E2656EE01A6C177200854DFC /* Frameworks */,
 				E2656EE11A6C177200854DFC /* Resources */,
+				045EED75CF586B85272F3396 /* Copy Pods Resources */,
+				E283ABE01A6DBBB9005C0116 /* Embed App Extensions */,
+				E296161D1A7048F7007A402C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E283ABD81A6DBBB9005C0116 /* PBXTargetDependency */,
+				E29616171A7048F7007A402C /* PBXTargetDependency */,
 			);
 			name = Fast;
 			productName = Fast;
@@ -165,6 +490,83 @@
 			productReference = E2656F021A6C177200854DFC /* FastTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E283ABBC1A6DBBB9005C0116 /* Fast WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E283ABDD1A6DBBB9005C0116 /* Build configuration list for PBXNativeTarget "Fast WatchKit Extension" */;
+			buildPhases = (
+				0D76CFC2F56883AA11C2DCE0 /* Check Pods Manifest.lock */,
+				E283ABB91A6DBBB9005C0116 /* Sources */,
+				E283ABBA1A6DBBB9005C0116 /* Frameworks */,
+				E283ABBB1A6DBBB9005C0116 /* Resources */,
+				A99DF18D209A85960ABEC17E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E283ABCE1A6DBBB9005C0116 /* PBXTargetDependency */,
+			);
+			name = "Fast WatchKit Extension";
+			productName = "Fast WatchKit Extension";
+			productReference = E283ABBD1A6DBBB9005C0116 /* Fast WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		E283ABCA1A6DBBB9005C0116 /* Fast WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E283ABDA1A6DBBB9005C0116 /* Build configuration list for PBXNativeTarget "Fast WatchKit App" */;
+			buildPhases = (
+				5EE1AAE30CC698DDC133A373 /* Check Pods Manifest.lock */,
+				E283ABC91A6DBBB9005C0116 /* Resources */,
+				1866A414C26FA40FB77B2BB2 /* Frameworks */,
+				81A29623757846C93ABBB1D0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fast WatchKit App";
+			productName = "Fast WatchKit App";
+			productReference = E283ABCB1A6DBBB9005C0116 /* Fast WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		E29616001A7048F7007A402C /* FastKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E296161A1A7048F7007A402C /* Build configuration list for PBXNativeTarget "FastKit" */;
+			buildPhases = (
+				315E25A979A44C0B6805A41F /* Check Pods Manifest.lock */,
+				E29615FC1A7048F7007A402C /* Sources */,
+				E29615FD1A7048F7007A402C /* Frameworks */,
+				E29615FE1A7048F7007A402C /* Headers */,
+				E29615FF1A7048F7007A402C /* Resources */,
+				5128A47DF0E528F6625F41DA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastKit;
+			productName = FastKit;
+			productReference = E29616011A7048F7007A402C /* FastKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E296160A1A7048F7007A402C /* FastKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E296161E1A7048F7007A402C /* Build configuration list for PBXNativeTarget "FastKitTests" */;
+			buildPhases = (
+				E29616071A7048F7007A402C /* Sources */,
+				E29616081A7048F7007A402C /* Frameworks */,
+				E29616091A7048F7007A402C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E296160E1A7048F7007A402C /* PBXTargetDependency */,
+				E29616101A7048F7007A402C /* PBXTargetDependency */,
+			);
+			name = FastKitTests;
+			productName = FastKitTests;
+			productReference = E296160B1A7048F7007A402C /* FastKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,8 +578,34 @@
 				TargetAttributes = {
 					E2656EE21A6C177200854DFC = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = PJ2W2876YK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E2656F011A6C177200854DFC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = E2656EE21A6C177200854DFC;
+					};
+					E283ABBC1A6DBBB9005C0116 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = PJ2W2876YK;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E283ABCA1A6DBBB9005C0116 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E29616001A7048F7007A402C = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = PJ2W2876YK;
+					};
+					E296160A1A7048F7007A402C = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = E2656EE21A6C177200854DFC;
 					};
@@ -198,6 +626,10 @@
 			targets = (
 				E2656EE21A6C177200854DFC /* Fast */,
 				E2656F011A6C177200854DFC /* FastTests */,
+				E283ABBC1A6DBBB9005C0116 /* Fast WatchKit Extension */,
+				E283ABCA1A6DBBB9005C0116 /* Fast WatchKit App */,
+				E29616001A7048F7007A402C /* FastKit */,
+				E296160A1A7048F7007A402C /* FastKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,14 +652,171 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E283ABBB1A6DBBB9005C0116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E283ABCC1A6DBBB9005C0116 /* Fast WatchKit App.app in Resources */,
+				E283ABC81A6DBBB9005C0116 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E283ABC91A6DBBB9005C0116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E283ABD41A6DBBB9005C0116 /* Interface.storyboard in Resources */,
+				E283ABD61A6DBBB9005C0116 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29615FF1A7048F7007A402C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29616091A7048F7007A402C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		045EED75CF586B85272F3396 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D76CFC2F56883AA11C2DCE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		315E25A979A44C0B6805A41F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5128A47DF0E528F6625F41DA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE1AAE30CC698DDC133A373 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81A29623757846C93ABBB1D0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9370E0E33D23DA296DC777F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A99DF18D209A85960ABEC17E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2656EDF1A6C177200854DFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2656EF51A6C177200854DFC /* DetailViewController.m in Sources */,
+				E283ABB81A6DBAB9005C0116 /* NSString_stripHtml.m in Sources */,
+				E2656F181A6C199300854DFC /* TAHWebViewController.m in Sources */,
+				E2656F151A6C198400854DFC /* TAHArticleTableViewCell.m in Sources */,
 				E2656EF21A6C177200854DFC /* MasterViewController.m in Sources */,
 				E2656EEF1A6C177200854DFC /* Fast.xcdatamodeld in Sources */,
 				E2656EEC1A6C177200854DFC /* AppDelegate.m in Sources */,
@@ -243,6 +832,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E283ABB91A6DBBB9005C0116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E283ABC31A6DBBB9005C0116 /* NewsItemInterfaceController.m in Sources */,
+				E283ABC61A6DBBB9005C0116 /* GlanceController.m in Sources */,
+				E23895B21A70598600DC41AC /* Fast.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29615FC1A7048F7007A402C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29616241A704953007A402C /* TAHDataAccess.m in Sources */,
+				E29616261A704DF8007A402C /* TAHArticle.m in Sources */,
+				E29616291A705107007A402C /* FTAPIClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29616071A7048F7007A402C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29616151A7048F7007A402C /* FastKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -250,6 +867,31 @@
 			isa = PBXTargetDependency;
 			target = E2656EE21A6C177200854DFC /* Fast */;
 			targetProxy = E2656F031A6C177200854DFC /* PBXContainerItemProxy */;
+		};
+		E283ABCE1A6DBBB9005C0116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E283ABCA1A6DBBB9005C0116 /* Fast WatchKit App */;
+			targetProxy = E283ABCD1A6DBBB9005C0116 /* PBXContainerItemProxy */;
+		};
+		E283ABD81A6DBBB9005C0116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E283ABBC1A6DBBB9005C0116 /* Fast WatchKit Extension */;
+			targetProxy = E283ABD71A6DBBB9005C0116 /* PBXContainerItemProxy */;
+		};
+		E296160E1A7048F7007A402C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E29616001A7048F7007A402C /* FastKit */;
+			targetProxy = E296160D1A7048F7007A402C /* PBXContainerItemProxy */;
+		};
+		E29616101A7048F7007A402C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2656EE21A6C177200854DFC /* Fast */;
+			targetProxy = E296160F1A7048F7007A402C /* PBXContainerItemProxy */;
+		};
+		E29616171A7048F7007A402C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E29616001A7048F7007A402C /* FastKit */;
+			targetProxy = E29616161A7048F7007A402C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -270,6 +912,14 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		E283ABD21A6DBBB9005C0116 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E283ABD31A6DBBB9005C0116 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -277,6 +927,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -319,6 +970,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -353,21 +1005,33 @@
 		};
 		E2656F0D1A6C177200854DFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8CC55458967442E9A461E9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Fast/Fast.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Fast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		E2656F0E1A6C177200854DFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7B0811ADED6D5211A681BA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Fast/Fast.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Fast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +1069,156 @@
 			};
 			name = Release;
 		};
+		E283ABDB1A6DBBB9005C0116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8CC55458967442E9A461E9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Fast_WatchKit_Extension;
+				INFOPLIST_FILE = "Fast WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		E283ABDC1A6DBBB9005C0116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7B0811ADED6D5211A681BA /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Fast_WatchKit_Extension;
+				INFOPLIST_FILE = "Fast WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		E283ABDE1A6DBBB9005C0116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8CC55458967442E9A461E9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Fast WatchKit Extension/Fast WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Fast WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E283ABDF1A6DBBB9005C0116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7B0811ADED6D5211A681BA /* Pods.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Fast WatchKit Extension/Fast WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Fast WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E296161B1A7048F7007A402C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8CC55458967442E9A461E9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FastKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E296161C1A7048F7007A402C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7B0811ADED6D5211A681BA /* Pods.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FastKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E296161F1A7048F7007A402C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FastKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fast.app/Fast";
+			};
+			name = Debug;
+		};
+		E29616201A7048F7007A402C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FastKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fast.app/Fast";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +1238,7 @@
 				E2656F0E1A6C177200854DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2656F0F1A6C177200854DFC /* Build configuration list for PBXNativeTarget "FastTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +1247,43 @@
 				E2656F111A6C177200854DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E283ABDA1A6DBBB9005C0116 /* Build configuration list for PBXNativeTarget "Fast WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E283ABDB1A6DBBB9005C0116 /* Debug */,
+				E283ABDC1A6DBBB9005C0116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E283ABDD1A6DBBB9005C0116 /* Build configuration list for PBXNativeTarget "Fast WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E283ABDE1A6DBBB9005C0116 /* Debug */,
+				E283ABDF1A6DBBB9005C0116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E296161A1A7048F7007A402C /* Build configuration list for PBXNativeTarget "FastKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E296161B1A7048F7007A402C /* Debug */,
+				E296161C1A7048F7007A402C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E296161E1A7048F7007A402C /* Build configuration list for PBXNativeTarget "FastKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E296161F1A7048F7007A402C /* Debug */,
+				E29616201A7048F7007A402C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Fast WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Fast.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>FastKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,26 @@
 			<true/>
 		</dict>
 		<key>E2656F011A6C177200854DFC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E283ABBC1A6DBBB9005C0116</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E283ABCA1A6DBBB9005C0116</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E29616001A7048F7007A402C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E296160A1A7048F7007A402C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
