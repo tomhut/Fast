@@ -13,6 +13,7 @@
 		B92234EAE41016B5DB4AAC4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581713BECC359EEAFE2DCCAA /* libPods.a */; };
 		E20618351A75386400C5E357 /* TAHArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20618341A75386400C5E357 /* TAHArticleViewController.m */; };
 		E23895B21A70598600DC41AC /* Fast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2656EED1A6C177200854DFC /* Fast.xcdatamodeld */; };
+		E2499CDD1A77003400E6BCBC /* TAHDateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2499CDC1A77003400E6BCBC /* TAHDateHeaderView.m */; };
 		E2656EE91A6C177200854DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656EE81A6C177200854DFC /* main.m */; };
 		E2656EEC1A6C177200854DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2656EEB1A6C177200854DFC /* AppDelegate.m */; };
 		E2656EEF1A6C177200854DFC /* Fast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2656EED1A6C177200854DFC /* Fast.xcdatamodeld */; };
@@ -118,6 +119,8 @@
 		7A8CC55458967442E9A461E9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E20618331A75386400C5E357 /* TAHArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHArticleViewController.h; sourceTree = "<group>"; };
 		E20618341A75386400C5E357 /* TAHArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHArticleViewController.m; sourceTree = "<group>"; };
+		E2499CDB1A77003400E6BCBC /* TAHDateHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHDateHeaderView.h; sourceTree = "<group>"; };
+		E2499CDC1A77003400E6BCBC /* TAHDateHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHDateHeaderView.m; sourceTree = "<group>"; };
 		E2656EE31A6C177200854DFC /* Fast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2656EE71A6C177200854DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2656EE81A6C177200854DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 			children = (
 				E2656F131A6C198400854DFC /* TAHArticleTableViewCell.h */,
 				E2656F141A6C198400854DFC /* TAHArticleTableViewCell.m */,
+				E2499CDB1A77003400E6BCBC /* TAHDateHeaderView.h */,
+				E2499CDC1A77003400E6BCBC /* TAHDateHeaderView.m */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -819,6 +824,7 @@
 				E2656F151A6C198400854DFC /* TAHArticleTableViewCell.m in Sources */,
 				E2656EF21A6C177200854DFC /* MasterViewController.m in Sources */,
 				E2656EEF1A6C177200854DFC /* Fast.xcdatamodeld in Sources */,
+				E2499CDD1A77003400E6BCBC /* TAHDateHeaderView.m in Sources */,
 				E2656EEC1A6C177200854DFC /* AppDelegate.m in Sources */,
 				E2656EE91A6C177200854DFC /* main.m in Sources */,
 			);
