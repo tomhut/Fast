@@ -35,7 +35,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
-    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:0.200 alpha:1.0]];
+//    [UIColor colorWithRed:0.804 green:0.114 blue:0.149 alpha:1.0]
     [self.tableView registerClass:[TAHDateHeaderView class] forHeaderFooterViewReuseIdentifier:@"TableViewSectionHeaderViewIdentifier"];
     self.tableView.backgroundColor = [UIColor colorWithWhite:0.200 alpha:1.0];
     
