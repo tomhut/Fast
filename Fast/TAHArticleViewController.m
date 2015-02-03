@@ -18,18 +18,17 @@
     [super viewDidLoad];
     [self setURL:[NSURL URLWithString:_article.url]];
     self.title = _article.title;
-    self.showsNavigationToolbar = NO;
+    
+//    self.showsNavigationToolbar = YES;
+    self.navigationController.toolbar.tintColor = [UIColor colorWithRed:0.804 green:0.114 blue:0.149 alpha:1.0];
+    self.navigationController.toolbar.opaque = YES;
+    self.navigationController.toolbar.barTintColor = [UIColor colorWithWhite:0.200 alpha:1.0];
+//    self.title = @"The quick brown fox jumps over the lazy dog";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-//    self.navigationController.navigationBar.translucent = NO
 }
 
 /*

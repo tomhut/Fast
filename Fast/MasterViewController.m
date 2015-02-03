@@ -33,12 +33,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:0.200 alpha:1.0]];
-//    [UIColor colorWithRed:0.804 green:0.114 blue:0.149 alpha:1.0]
     [self.tableView registerClass:[TAHDateHeaderView class] forHeaderFooterViewReuseIdentifier:@"TableViewSectionHeaderViewIdentifier"];
-    self.tableView.backgroundColor = [UIColor colorWithWhite:0.200 alpha:1.0];
+    self.tableView.backgroundColor = [UIColor whiteColor];
     
     //section headers
     self.sectionDateFormatter = [[NSDateFormatter alloc] init];
@@ -51,7 +49,7 @@
     
     // Initialize the refresh control.
     self.refreshControl = [[UIRefreshControl alloc] init];
-    self.refreshControl.tintColor = [UIColor whiteColor];
+    self.refreshControl.tintColor = [UIColor colorWithRed:0.804 green:0.114 blue:0.149 alpha:1.0];
     [self.refreshControl addTarget:self
                             action:@selector(refreshPosts)
                   forControlEvents:UIControlEventValueChanged];
@@ -61,17 +59,27 @@
     
     self.detailViewController = (TAHArticleViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
+//    NSMutableParagraphStyle *paragraphStyle = NSMutableParagraphStyle.new;
+//    paragraphStyle.alignment                = NSTextAlignmentRight;
+//    
+//    
+//    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+//                                                                     paragraphStyle,
+//                                                                     NSParagraphStyleAttributeName,
+//                                                                     nil]];
+    
+    
     //StatusBar
-    UIWindow *statusBarWindow = [[UIApplication sharedApplication] valueForKey:@"_statusBarWindow"];
-    UIView *statusBarView = statusBarWindow.subviews.firstObject;
-    statusBarView.backgroundColor = [UIColor colorWithWhite:0.200 alpha:1.0];
+//    UIWindow *statusBarWindow = [[UIApplication sharedApplication] valueForKey:@"_statusBarWindow"];
+//    UIView *statusBarView = statusBarWindow.subviews.firstObject;
+//    statusBarView.backgroundColor = [UIColor colorWithWhite:0.200 alpha:1.0];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
     
-    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, 100, self.tableView.frame.size.width, self.tableView.frame.size.height);
+//    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, 100, self.tableView.frame.size.width, self.tableView.frame.size.height);
 
 }
 
@@ -88,6 +96,7 @@
 //            [self.tableView reloadData];
             [self groupArticlesByDay:articles];
             [self.tableView reloadData];
+            [self updateTitle];
         } else {
             NSLog(@"Error: %@", error);
         }
@@ -149,7 +158,7 @@
         TAHArticle *article = [articlesOnThisDay objectAtIndex:indexPath.row];
         TAHArticleViewController *destination = (TAHArticleViewController *)[[segue destinationViewController] topViewController];
         destination.article = article;
-        destination.navigationItem.leftItemsSupplementBackButton = YES;
+//        destination.navigationItem.leftItemsSupplementBackButton = YES;
     }
 }
 
@@ -174,6 +183,7 @@
 }
 
 - (void)configureCell:(TAHArticleTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    cell.presentingTV = self.tableView;
     NSDate *dateRepresentingThisDay = [self.sortedDays objectAtIndex:indexPath.section];
     NSArray *articlesOnThisDay = [self.sections objectForKey:dateRepresentingThisDay];
     TAHArticle *article = [articlesOnThisDay objectAtIndex:indexPath.row];
@@ -181,6 +191,7 @@
     NSString *abstract = article.abstract;
     NSString* stripped = [abstract stripHtml];
     cell.descriptionLabel.text = stripped;
+    cell.tagLabel.text = article.primaryTag;
     
     cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
 }
@@ -191,18 +202,30 @@
 //}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 34.0;
+//    return 44.0;
+    return 0;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    static NSString *headerReuseIdentifier = @"TableViewSectionHeaderViewIdentifier";
-    
-    TAHDateHeaderView *sectionHeaderView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerReuseIdentifier];
-    // Display specific header title
-    NSDate *dateRepresentingThisDay = [self.sortedDays objectAtIndex:section];
-    sectionHeaderView.dateLabel.text = [self.sectionDateFormatter stringFromDate:dateRepresentingThisDay];;
-    
-    return sectionHeaderView;
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    static NSString *headerReuseIdentifier = @"TableViewSectionHeaderViewIdentifier";
+//    
+//    TAHDateHeaderView *sectionHeaderView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerReuseIdentifier];
+//    // Display specific header title
+//    NSDate *dateRepresentingThisDay = [self.sortedDays objectAtIndex:section];
+//    sectionHeaderView.dateLabel.text = [self.sectionDateFormatter stringFromDate:dateRepresentingThisDay];
+//    
+//    return sectionHeaderView;
+//}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self updateTitle];
 }
+
+- (void)updateTitle {
+    NSIndexPath *indexPath = [self.tableView indexPathsForVisibleRows].firstObject;
+    NSDate *dateRepresentingThisDay = [self.sortedDays objectAtIndex:indexPath.section];
+    self.title = [self.sectionDateFormatter stringFromDate:dateRepresentingThisDay];
+}
+
 
 @end

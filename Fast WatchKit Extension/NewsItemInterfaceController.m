@@ -33,8 +33,10 @@
 }
 
 - (void)configureControllerWithArticle:(TAHArticle *)article {
-    [_titleLabel setText:article.title];
-    [_bodyLabel setText:article.abstract];
+//    [_titleLabel setText:article.title];
+    [_titleLabel setText:@"Apple is the iPhone company: one chart"];
+    [_bodyLabel setText:@"In 2007, Apple dropped the word computer from it's official name. What foresight."];
+//    [_bodyLabel setText:article.abstract];
 }
 
 - (void)didDeactivate {

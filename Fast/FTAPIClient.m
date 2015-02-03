@@ -51,12 +51,23 @@
                                        NSDictionary *data = [responseArray objectForKey:@"data"];
                                        NSMutableArray *articles = [NSMutableArray new];
                                        for (NSDictionary *thisArticleDictionary in [data objectForKey:@"results"]) {
+                                           NSLog(@"%@", thisArticleDictionary);
                                            NSError *error;
                                            TAHArticle *newArticle = [MTLJSONAdapter modelOfClass:[TAHArticle class]
                                                                               fromJSONDictionary:thisArticleDictionary
                                                                                            error:&error];
                                            
                                            if (!error) {
+                                               //PrimaryTag
+                                               NSString *primaryTagID = [[thisArticleDictionary objectForKey:@"metadata"] objectForKey:@"primarytagid"];
+                                               for (NSDictionary *tag in [thisArticleDictionary objectForKey:@"tags"]) {
+                                                   NSNumber *tagID = [tag objectForKey:@"id"];
+                                                   if ([tagID.stringValue isEqualToString:primaryTagID]) {
+                                                       newArticle.primaryTag = [tag objectForKey:@"tag"];
+                                                   }
+                                               }
+                                               
+                                               
                                                [articles addObject:newArticle];
                                            }
                                        }
@@ -75,7 +86,7 @@
                                   @"arguments" : @{ @"sort" : @"date",
                                                     @"query" : @"",
                                                     @"offset" : offset ,
-                                                    @"limit" : @60,
+                                                    @"limit" : @100,
                                                     @"suppressdrafts" : [NSNumber numberWithBool:0],
                                                     @"outputfields" : @{ @"id" : [NSNumber numberWithBool:NO],
                                                                          @"title" : [NSNumber numberWithBool:YES],

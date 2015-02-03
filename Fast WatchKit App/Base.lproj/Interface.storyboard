@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
@@ -13,6 +13,7 @@
                         <group width="1" alignment="left" layout="vertical" id="n05-Kl-PXb">
                             <items>
                                 <label width="1" alignment="left" text="Label" numberOfLines="0" id="i3n-CU-DxZ" userLabel="title">
+                                    <color key="textColor" red="0.76078431372549016" green="0.0" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
                                 <label width="1" alignment="left" text="Label" numberOfLines="0" id="5tE-bv-5vJ" userLabel="body"/>

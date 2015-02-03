@@ -17,5 +17,6 @@
 @property (copy, nonatomic) NSString *abstract;
 @property (copy, nonatomic) NSString *url;
 @property (copy, nonatomic) NSDate *datepublished;
+@property (copy, nonatomic) NSString *primaryTag;
 
 @end

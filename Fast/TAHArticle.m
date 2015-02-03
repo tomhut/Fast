@@ -27,7 +27,8 @@
     return @{@"title" : @"title",
              @"abstract" : @"abstract",
              @"url" : @"url",
-             @"datepublished" : @"datepublished"};
+             @"datepublished" : @"datepublished",
+             @"primaryTag" : @"primaryTag"};
 }
 
 #pragma mark - MTLValueTransformer

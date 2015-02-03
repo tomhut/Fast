@@ -23,15 +23,27 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.titleLabel.preferredMaxLayoutWidth = [self maxWidth];
-//    self.descriptionLabel.preferredMaxLayoutWidth = [self maxWidth];
+    self.titleLabel.preferredMaxLayoutWidth = [self maxTitleWidth];
+    self.descriptionLabel.preferredMaxLayoutWidth = [self maxWidth];
+    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    backgroundView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
+    self.selectedBackgroundView = backgroundView;
 }
 
+- (void)setPresentingTV:(UITableView *)presentingTV {
+    _presentingTV = presentingTV;
+    [self layoutSubviews];
+}
 
+- (CGFloat)maxTitleWidth {
+    CGFloat appMax = CGRectGetWidth(_presentingTV.frame);
+    appMax -= 40;
+    return appMax;
+}
 
 - (CGFloat)maxWidth {
-    CGFloat appMax = CGRectGetWidth([UIApplication sharedApplication].keyWindow.frame);
-    appMax -= 22 + 22;
+    CGFloat appMax = CGRectGetWidth(_presentingTV.frame);
+    appMax -= 25 + 25;
     return appMax;
 }
 

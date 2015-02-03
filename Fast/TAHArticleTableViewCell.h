@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
-
+@property (strong, nonatomic) UITableView *presentingTV;
+@property (strong, nonatomic) IBOutlet UILabel *tagLabel;
 
 @end
