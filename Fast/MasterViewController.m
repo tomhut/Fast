@@ -193,6 +193,13 @@
     cell.descriptionLabel.text = stripped;
     cell.tagLabel.text = article.primaryTag;
     
+    //Time
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterNoStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    cell.timePublishedLabel.text = [dateFormatter stringFromDate:article.datepublished];
+    
     cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
 }
 

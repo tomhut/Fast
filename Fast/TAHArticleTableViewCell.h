@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (strong, nonatomic) UITableView *presentingTV;
 @property (strong, nonatomic) IBOutlet UILabel *tagLabel;
+@property (strong, nonatomic) IBOutlet UILabel *timePublishedLabel;
 
 @end

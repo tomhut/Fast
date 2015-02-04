@@ -10,6 +10,8 @@
 
 @interface TAHArticleViewController ()
 
+@property (nonatomic, strong) NSUserActivity *myActivity;
+
 @end
 
 @implementation TAHArticleViewController
@@ -24,11 +26,23 @@
     self.navigationController.toolbar.opaque = YES;
     self.navigationController.toolbar.barTintColor = [UIColor colorWithWhite:0.200 alpha:1.0];
 //    self.title = @"The quick brown fox jumps over the lazy dog";
+    
+    _myActivity = [[NSUserActivity alloc]
+                                  initWithActivityType: @"com.tomhut.fast.reading"];
+//    myActivity.userInfo = @{ ... };
+    _myActivity.title = @"Reading";
+    _myActivity.webpageURL = [NSURL URLWithString:_article.url];
+    [_myActivity becomeCurrent];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [_myActivity invalidate];
 }
 
 /*
