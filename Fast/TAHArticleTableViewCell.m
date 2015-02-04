@@ -37,7 +37,7 @@
 
 - (CGFloat)maxTitleWidth {
     CGFloat appMax = CGRectGetWidth(_presentingTV.frame);
-    appMax -= 40;
+    appMax -= 48;
     return appMax;
 }
 

@@ -154,6 +154,8 @@
 		E283ABD11A6DBBB9005C0116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E283ABD31A6DBBB9005C0116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		E283ABD51A6DBBB9005C0116 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E28C6E7C1A82834100DDB7BF /* Fast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Fast.entitlements; sourceTree = "<group>"; };
+		E28C6E7D1A82838000DDB7BF /* Fast WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Fast WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		E29616011A7048F7007A402C /* FastKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29616041A7048F7007A402C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E29616051A7048F7007A402C /* FastKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastKit.h; sourceTree = "<group>"; };
@@ -162,8 +164,6 @@
 		E29616141A7048F7007A402C /* FastKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastKitTests.m; sourceTree = "<group>"; };
 		E29616211A704953007A402C /* TAHDataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHDataAccess.h; sourceTree = "<group>"; };
 		E29616221A704953007A402C /* TAHDataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHDataAccess.m; sourceTree = "<group>"; };
-		E296162B1A70519C007A402C /* Fast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Fast.entitlements; sourceTree = "<group>"; };
-		E296162C1A7051EC007A402C /* Fast WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Fast WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		ED7B0811ADED6D5211A681BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,7 +259,7 @@
 		E2656EE51A6C177200854DFC /* Fast */ = {
 			isa = PBXGroup;
 			children = (
-				E296162B1A70519C007A402C /* Fast.entitlements */,
+				E28C6E7C1A82834100DDB7BF /* Fast.entitlements */,
 				E283ABB51A6DBAB1005C0116 /* Vendor */,
 				E2656F121A6C197700854DFC /* TableView */,
 				E2656EEA1A6C177200854DFC /* AppDelegate.h */,
@@ -346,7 +346,7 @@
 		E283ABBE1A6DBBB9005C0116 /* Fast WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E296162C1A7051EC007A402C /* Fast WatchKit Extension.entitlements */,
+				E28C6E7D1A82838000DDB7BF /* Fast WatchKit Extension.entitlements */,
 				E283ABC11A6DBBB9005C0116 /* NewsItemInterfaceController.h */,
 				E283ABC21A6DBBB9005C0116 /* NewsItemInterfaceController.m */,
 				E283ABC41A6DBBB9005C0116 /* GlanceController.h */,
@@ -583,7 +583,7 @@
 				TargetAttributes = {
 					E2656EE21A6C177200854DFC = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = PJ2W2876YK;
+						DevelopmentTeam = URXHPM52FC;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -596,7 +596,7 @@
 					};
 					E283ABBC1A6DBBB9005C0116 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = PJ2W2876YK;
+						DevelopmentTeam = URXHPM52FC;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -605,6 +605,7 @@
 					};
 					E283ABCA1A6DBBB9005C0116 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = URXHPM52FC;
 					};
 					E29616001A7048F7007A402C = {
 						CreatedOnToolsVersion = 6.2;
@@ -947,7 +948,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tom Hutchinson (TT4NNH563B)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -967,6 +968,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "7fabba50-d48a-43d7-a7fc-155d41fbb308";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -990,7 +992,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tom Hutchinson (TT4NNH563B)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1003,6 +1005,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "7fabba50-d48a-43d7-a7fc-155d41fbb308";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1083,6 +1086,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1090,6 +1095,7 @@
 				IBSC_MODULE = Fast_WatchKit_Extension;
 				INFOPLIST_FILE = "Fast WatchKit App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -1102,9 +1108,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				IBSC_MODULE = Fast_WatchKit_Extension;
 				INFOPLIST_FILE = "Fast WatchKit App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -1153,7 +1162,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tom Hutchinson (TT4NNH563B)";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1165,8 +1174,11 @@
 				);
 				INFOPLIST_FILE = FastKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1179,7 +1191,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tom Hutchinson (TT4NNH563B)";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1187,8 +1199,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FastKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -11,13 +11,16 @@
 #import "NSString_stripHtml.h"
 #import "FastKit.h"
 #import "TAHDateHeaderView.h"
+#import <Pusher/Pusher.h>
 
-@interface MasterViewController ()
+@interface MasterViewController () <PTPusherDelegate>
 
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
 @property (strong, nonatomic) NSMutableDictionary *sections;
-@property (strong, nonatomic) NSArray *sortedDays;
+@property (strong, nonatomic) NSMutableArray *sortedDays;
 @property (strong, nonatomic) NSDateFormatter *sectionDateFormatter;
+
+
 @end
 
 @implementation MasterViewController
@@ -29,6 +32,29 @@
         self.preferredContentSize = CGSizeMake(320.0, 600.0);
     }
 }
+//- (IBAction)add:(id)sender {
+//    TAHArticle *newArticle = [TAHArticle new];
+//    newArticle.title = @"jffdsf";
+//    newArticle.abstract = @"fljasdhglkhdflgkhdfslkg";
+//    newArticle.url = @"http://google.com";
+//    newArticle.datepublished = [NSDate new];
+//    newArticle.primaryTag = @"test";
+//    
+//    
+//    NSArray *insertIndexPaths = [[NSArray alloc] initWithObjects:
+//                                 [NSIndexPath indexPathForRow:0 inSection:0],
+//                                 nil];
+//    
+//    
+//    NSDate *dateRepresentingThisDay = [self dateAtBeginningOfDayForDate:newArticle.datepublished];
+//    NSArray *articlesOnThisDay = [self.sections objectForKey:dateRepresentingThisDay];
+//    NSMutableArray *newArray = articlesOnThisDay.mutableCopy;
+//    [newArray insertObject:newArticle atIndex:0];
+//    [self.sections setObject:newArray forKey:dateRepresentingThisDay];
+//    
+//    [self.tableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationTop];
+//    
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -73,6 +99,31 @@
 //    UIWindow *statusBarWindow = [[UIApplication sharedApplication] valueForKey:@"_statusBarWindow"];
 //    UIView *statusBarView = statusBarWindow.subviews.firstObject;
 //    statusBarView.backgroundColor = [UIColor colorWithWhite:0.200 alpha:1.0];
+    
+    
+
+    
+    PTPusherChannel *channel = [[FTAPIClient sharedClient].client subscribeToChannelNamed:@"clamo-engine-prod01-querydef-855dc66573256ec1a5088c3beb25200a"];
+    [channel bindToEventNamed:@"post" handleWithBlock:^(PTPusherEvent *channelEvent) {
+        // channelEvent.data is a NSDictianary of the JSON object received
+        NSLog(@"post: %@", channelEvent.data);
+        TAHArticle *newArticle = [[FTAPIClient sharedClient] articleFromDictionary:channelEvent.data];
+        
+        NSArray *insertIndexPaths = [[NSArray alloc] initWithObjects:
+                                     [NSIndexPath indexPathForRow:0 inSection:0],
+                                     nil];
+        
+        
+        NSDate *dateRepresentingThisDay = [self dateAtBeginningOfDayForDate:newArticle.datepublished];
+        NSArray *articlesOnThisDay = [self.sections objectForKey:dateRepresentingThisDay];
+        NSMutableArray *newArray = articlesOnThisDay.mutableCopy;
+        [newArray insertObject:newArticle atIndex:0];
+        [self.sections setObject:newArray forKey:dateRepresentingThisDay];
+        
+        [self.tableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationTop];
+        
+    }];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -92,8 +143,7 @@
 -(void)refreshPosts {
     [[FTAPIClient sharedClient] getArticlesWithOffset:[NSNumber numberWithInt:0] completion:^(NSArray *articles, NSError *error) {
         if (!error) {
-//            _articles = articles;
-//            [self.tableView reloadData];
+
             [self groupArticlesByDay:articles];
             [self.tableView reloadData];
             [self updateTitle];
@@ -124,7 +174,8 @@
     }
     
     NSArray *unsortedDays = [self.sections allKeys];
-    _sortedDays = [[unsortedDays sortedArrayUsingSelector:@selector(compare:)] reverseObjectEnumerator].allObjects;
+    NSArray *sortedDaysIm = [[unsortedDays sortedArrayUsingSelector:@selector(compare:)] reverseObjectEnumerator].allObjects;
+    _sortedDays = sortedDaysIm.mutableCopy;
 //    NSLog(@"self.articlesByDay %@", self.sections);
 }
 
@@ -158,6 +209,8 @@
         TAHArticle *article = [articlesOnThisDay objectAtIndex:indexPath.row];
         TAHArticleViewController *destination = (TAHArticleViewController *)[[segue destinationViewController] topViewController];
         destination.article = article;
+        self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+
 //        destination.navigationItem.leftItemsSupplementBackButton = YES;
     }
 }

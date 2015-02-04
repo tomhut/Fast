@@ -47,7 +47,7 @@
         return _persistentStoreCoordinator;
     }
     
-    NSString *containerPath = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.fast.datastore.Documents"].path;
+    NSString *containerPath = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.fast.datastore.store"].path;
     NSString *sqlitePath = [NSString stringWithFormat:@"%@/%@", containerPath, @"Fast"];
     NSURL *url = [NSURL fileURLWithPath:sqlitePath];
     

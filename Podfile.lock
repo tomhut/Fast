@@ -20,19 +20,27 @@ PODS:
   - AFNetworking/UIKit (2.5.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - libPusher (1.5):
+    - libPusher/Core (= 1.5)
+  - libPusher/Core (1.5):
+    - SocketRocket (= 0.3.1-beta2)
   - Mantle (1.3):
     - Mantle/extobjc (= 1.3)
   - Mantle/extobjc (1.3)
   - PBWebViewController (0.3)
+  - SocketRocket (0.3.1-beta2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - libPusher (~> 1.5)
   - Mantle (= 1.3)
   - PBWebViewController
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  libPusher: 583326327a72ab7cd0f38692f61f9061cf4be3d9
   Mantle: ab10e09428de10578dcaeadfc2a9463309b40695
   PBWebViewController: 0a36bbd0f82741d9457177c9c37f5ff747cba312
+  SocketRocket: 79a68ae186063c65e1fe6f638b1ae2927aa5f304
 
 COCOAPODS: 0.35.0

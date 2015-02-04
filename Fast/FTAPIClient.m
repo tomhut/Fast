@@ -25,6 +25,10 @@
         _sharedClient = [[FTAPIClient alloc] initWithBaseURL:baseURL
                                         sessionConfiguration:config];
         _sharedClient.responseSerializer = [AFJSONResponseSerializer serializer];
+        
+        _sharedClient.client = [PTPusher pusherWithKey:@"45b4170c83029acc104e" delegate:self];
+        
+        [_sharedClient.client connect];
     });
     
     return _sharedClient;
@@ -51,25 +55,13 @@
                                        NSDictionary *data = [responseArray objectForKey:@"data"];
                                        NSMutableArray *articles = [NSMutableArray new];
                                        for (NSDictionary *thisArticleDictionary in [data objectForKey:@"results"]) {
-                                           NSLog(@"%@", thisArticleDictionary);
+//                                           NSLog(@"%@", thisArticleDictionary);
                                            NSError *error;
-                                           TAHArticle *newArticle = [MTLJSONAdapter modelOfClass:[TAHArticle class]
-                                                                              fromJSONDictionary:thisArticleDictionary
-                                                                                           error:&error];
+                                           TAHArticle *newArticle = [self articleFromDictionary:thisArticleDictionary];
                                            
-                                           if (!error) {
-                                               //PrimaryTag
-                                               NSString *primaryTagID = [[thisArticleDictionary objectForKey:@"metadata"] objectForKey:@"primarytagid"];
-                                               for (NSDictionary *tag in [thisArticleDictionary objectForKey:@"tags"]) {
-                                                   NSNumber *tagID = [tag objectForKey:@"id"];
-                                                   if ([tagID.stringValue isEqualToString:primaryTagID]) {
-                                                       newArticle.primaryTag = [tag objectForKey:@"tag"];
-                                                   }
-                                               }
-                                               
-                                               
-                                               [articles addObject:newArticle];
-                                           }
+                                           [articles addObject:newArticle];
+
+                                           
                                        }
                                        [self saveArticlesToStore:articles];
                                        completion(articles, nil);
@@ -79,6 +71,29 @@
     return task;
 }
 
+- (TAHArticle *)articleFromDictionary : (NSDictionary *)articleDictionary {
+    NSError *error;
+    TAHArticle *newArticle = [MTLJSONAdapter modelOfClass:[TAHArticle class]
+                                       fromJSONDictionary:articleDictionary
+                                                    error:&error];
+    
+    
+    
+    if (!error) {
+        //PrimaryTag
+        NSString *primaryTagID = [[articleDictionary objectForKey:@"metadata"] objectForKey:@"primarytagid"];
+        for (NSDictionary *tag in [articleDictionary objectForKey:@"tags"]) {
+            NSNumber *tagID = [tag objectForKey:@"id"];
+            if ([tagID.stringValue isEqualToString:primaryTagID]) {
+                newArticle.primaryTag = [tag objectForKey:@"tag"];
+            }
+        }
+    } else {
+        NSLog(@"error!!!!: %@", error);
+    }
+        return newArticle;
+}
+
 
 #pragma mark - Private Methods
 - (NSDictionary *)parametersWithOffset:(NSNumber *)offset {
@@ -86,7 +101,7 @@
                                   @"arguments" : @{ @"sort" : @"date",
                                                     @"query" : @"",
                                                     @"offset" : offset ,
-                                                    @"limit" : @100,
+                                                    @"limit" : @50,
                                                     @"suppressdrafts" : [NSNumber numberWithBool:0],
                                                     @"outputfields" : @{ @"id" : [NSNumber numberWithBool:NO],
                                                                          @"title" : [NSNumber numberWithBool:YES],
