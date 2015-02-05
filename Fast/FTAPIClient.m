@@ -101,7 +101,7 @@
                                   @"arguments" : @{ @"sort" : @"date",
                                                     @"query" : @"",
                                                     @"offset" : offset ,
-                                                    @"limit" : @50,
+                                                    @"limit" : @30,
                                                     @"suppressdrafts" : [NSNumber numberWithBool:0],
                                                     @"outputfields" : @{ @"id" : [NSNumber numberWithBool:NO],
                                                                          @"title" : [NSNumber numberWithBool:YES],

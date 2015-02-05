@@ -18,5 +18,6 @@
 @property (copy, nonatomic) NSString *url;
 @property (copy, nonatomic) NSDate *datepublished;
 @property (copy, nonatomic) NSString *primaryTag;
+@property (copy, nonatomic) NSString *uuidv3;
 
 @end

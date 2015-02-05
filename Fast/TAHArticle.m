@@ -15,7 +15,8 @@
     return @{@"title" : @"title",
              @"abstract" : @"abstract",
              @"url" : @"url",
-             @"datepublished" : @"datepublished"};
+             @"datepublished" : @"datepublished",
+             @"uuidv3" : @"uuidv3"};
 }
 
 #pragma mark - MTLManagedObjectSerializingDelegate
@@ -28,7 +29,8 @@
              @"abstract" : @"abstract",
              @"url" : @"url",
              @"datepublished" : @"datepublished",
-             @"primaryTag" : @"primaryTag"};
+             @"primaryTag" : @"primaryTag",
+             @"uuidv3" : @"uuidv3"};
 }
 
 #pragma mark - MTLValueTransformer
